@@ -1,0 +1,149 @@
+ /* @media (min-width: 1680px){ 
+     
+
+    navbar
+    .logo-img {
+        margin-top: 15px;
+    }
+
+    hero-section
+    .hero-content {
+        top: 23%;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    about-section
+    .img-wraper {
+        height: 70vh;
+    }
+
+    .about-para {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .img-container {
+        height: 236px;
+    }
+} */
+
+
+@media (max-width: 1024px) {
+    
+    /* navbar */
+    .second-header img {
+        top: 0px;
+    }
+
+    /* hero-section */
+    .hero-content {
+        top: 30%;
+    }
+
+    /* about-section */
+    #about-us {
+        margin-top: 150px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    /* hero-section */
+    .hero-content {
+        top: 16%;
+    }
+
+    .hero-heading {
+        font-size: 55px;
+    }
+
+    main {
+        height: 52vh;
+    }
+
+    .img-wraper {
+        height: 52vh;
+    }
+
+    /* about-section */
+    #about-us {
+        margin-top: 0px;
+    }
+
+    .img-container {
+        height: 360px;
+    }
+
+    #goals {
+        margin-top: 435px;
+    }
+
+    .goal-content {
+        height: 128px;
+    }
+
+    #goals {
+        padding: 50px 0 50px 0;
+    }
+
+    .column {
+        -ms-flex: 50%;
+        flex: 100;
+        max-width: 50%;
+    }
+    .block-2 {
+        height: 215px;
+    }
+    .block-5 {
+        height: 212px;
+    }
+    .block-1, .block-4, .block-3, .block-6 {
+        height: 214px;
+    }
+}
+
+@media (max-width: 480px) {
+   /* hero section */
+    .hero-content {
+        top: 31%;
+    }
+    .hero-heading {
+        font-size: 33px;
+    }
+    .hero-para {
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    /* about section */
+    #about-us {
+        margin-top: 133px;
+    }
+
+    .about-heading-back h3 {
+        font-size: 55px;
+       
+    }
+
+    .about-heading-back {
+        top: 18px;
+      
+    }
+    .about-para {
+       
+        padding: 15px 30px 15px 30px;
+        
+    }
+
+    .img-container {
+        height: 210px;
+    }
+
+    /* goals */
+    #goals {
+        margin-top: 262px;
+    }
+}

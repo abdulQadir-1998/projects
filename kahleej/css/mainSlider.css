@@ -1,0 +1,81 @@
+.example h2 {
+    color: white;
+}
+.main-slider{
+position: relative;
+
+}
+.main-slider .text{
+position: relative;
+display: block;
+font-size: 16px;
+font-family: 'Open Sans',sans-serif;
+line-height: 26px;
+color: #fff;
+margin:0px 0px 0px 0px !important;
+}
+
+.tp-rightarrow.preview3 .tp-arr-iwrapper,
+.tp-leftarrow.preview3 .tp-arr-iwrapper,
+.tp-bullets.preview3{
+display: none;
+}
+.tparrows.preview3{
+background: none !important;
+margin: 0px 50px;
+top: 50% !important;
+}
+.tparrows.preview3:after{
+background: none !important;
+top: 60% !important;
+font-size: 20px;
+color: #fff;
+width: 55px;
+height: 55px;
+text-align: center;
+line-height: 55px;
+border: 2px solid #f11b25;
+border-radius: 5px;
+}
+.main-slider .btn-two{
+color: #fff !important;
+margin-left: 10px;
+transition: all 900ms ease;
+}
+.main-slider .btn-two:hover{
+background: #f6b129;
+border: 2px solid #f6b129;
+transition: all 900ms ease;
+}
+.main-slider .btn-one{
+color: #fff !important;
+border-radius: 5px;
+padding: 11px 33px 10px 33px;
+border: 2px solid #f6b129;
+transition: all 900ms ease;
+}
+.main-slider .btn-one a{
+color: #fff !important;
+border-radius: 5px;
+padding: 11px 33px 10px 33px;
+border: 2px solid #f6b129;
+transition: all 900ms ease;
+}
+.main-slider .btn-one:hover{
+background: transparent;
+border: 2px solid #fff;
+transition: all 900ms ease;
+}
+#slide-1687-layer-4,#slide-1688-layer-4,#slide-1689-layer-4{
+padding: 0px !important;
+border: none;
+}
+#slide-1687-layer-4:hover,
+#slide-1688-layer-4:hover,
+#slide-1689-layer-4:hover{
+background: none !important;
+}
+#slide-1688-layer-1,
+#slide-1689-layer-1{
+background: rgba(0, 0, 0, 0.1) !important;
+}
