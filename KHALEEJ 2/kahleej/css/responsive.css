@@ -1,0 +1,347 @@
+ @media (min-width: 1680px){ 
+     
+
+    /* navbar */
+    .logo-img {
+        margin-top: 15px;
+    }
+
+    /* hero-section */
+    .hero-content {
+        top: 42%;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    /* about-section */
+    .img-wraper {
+        height: 70vh;
+    }
+
+    .about-para {
+        padding: 30px 30px 30px 30px;
+        margin: 40px 0 0 0;
+    }
+
+    .img-container {
+        height: 285px;
+        margin-top: 0px;
+    }
+
+    #about-us {
+        margin-top: 110px;
+    }
+    
+       
+}
+@media(max-width:1240px){
+    .about-img {
+        margin-top: 40px;
+    }
+    .about-para {
+        margin: 377px 0 0 0px;
+    }
+
+    .about-img {
+        margin-top: 234px;
+    }
+}
+
+@media(max-width: 1024px) {
+ 
+    /* navbar */
+    .second-header img {
+        top: 0px;
+    }
+
+    /* hero-section */
+    main{
+
+        height: 90vh;
+    }
+
+    .img-wraper{
+
+        height: 90vh;
+    }
+
+    .hero-content {
+        top: 30%;
+    }
+
+  .hero-heading {
+      font-size: 65px;
+  }
+    /* about-section */
+    #about-us {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .about-para{
+
+        margin-top: 0px;
+    }
+
+    .about-img{
+
+        margin-top: 0px;
+    }
+
+    .img-container{
+
+        height: 235px;
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+   .manu-toggle{
+       padding-right: 50px;
+   }
+
+   .logo-img {
+    margin-left: 40px;
+}
+
+    /* hero-section */
+    .hero-content {
+        top: 16%;
+    }
+
+    .hero-heading {
+        font-size: 50px;
+    }
+
+    .hero-para {
+        letter-spacing: 8px;
+    }
+
+    main {
+        height: 52vh;
+    }
+
+    .img-wraper {
+        height: 52vh;
+    }
+
+    /* about-section */
+    #about-us {
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+
+
+    .about-heading {
+        margin-top: 58px;
+        margin-left: 30px;
+    }
+
+    .about-heading-back h3 {
+        font-size: 75px;
+    }
+
+    .about-heading-back {
+        margin-left: 0px;
+    }
+
+    .img-box{
+        width: 110%;
+    }
+
+    .img-container {
+        height: 290px;
+        width: 40%;
+        left: 32%;
+    }
+
+    #goals {
+        margin-top: 435px;
+    }
+
+    .goal-content {
+        height: 128px;
+    }
+
+    #goals {
+        padding: 50px 0 50px 0;
+    }
+
+    .image {
+        padding: 10px 60px 10px 60px;
+    }
+
+    .column {
+        -ms-flex: 50%;
+        flex: 100;
+        max-width: 50%;
+    }
+    .block-2 {
+        height: 215px;
+    }
+    .block-5 {
+        height: 212px;
+    }
+    .block-1, .block-4, .block-3, .block-6 {
+        height: 214px;
+    }
+}
+
+ 
+@media(max-width:320px){
+    .logo-img{
+        width: 17%;
+        margin-top: 17px;
+    }
+
+    .hero-para {
+        letter-spacing: 2px;
+        font-size: 6px;
+        margin-top: -10px;
+    }
+
+    .hero-content {
+        top: 20%;
+    }
+
+    .hero-heading {
+        font-size: 16px;
+    }
+    .about-heading-back h3 {
+        font-size: 25px;
+    }
+
+    .about-heading {
+        margin-top: 37px;
+        margin-left: 15px;
+    }
+    .about-heading h3 {
+        font-size: 10px;
+    }
+    #about-us{
+        padding: 0px;
+    }
+
+    main {
+        height: 42vh;
+    }
+
+    .about-para {
+        margin: 0px 0 0 0;
+        padding: 10px 10px 10px 0px;
+        line-height: 15px;
+        font-size: 10px;
+        text-align: justify;
+    }
+    .img-container{
+        border: 7px solid #012653;
+        height: 103px;
+    }
+
+    #goals{
+        margin-top: 190px;
+        padding: 0px 0 60px 0;
+    }
+    .goal-content {
+        height: 342px;
+        
+    }
+
+    .img-box {
+        width: 110%;
+    }
+    .img-container {
+        width: 50%;
+        height: 129px;
+        left: 28%;
+    }
+    .service-heading h3 {
+        font-weight: bold;
+        font-size: 10px;
+        position: relative;
+        top: -22px;
+        left: 11px;
+    }
+    .service-heading-back h3 {
+        font-size: 25px;
+        font-weight: bold;
+      
+    }
+    .service-heading-back {
+   
+        margin-left: 0px;
+     
+    }
+    #service {
+        padding-top: 30px;
+    }
+    
+    .overlay-section {
+        margin-top: 0px;
+    }
+    .image {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        left: 25px;
+        right: 0;
+        height: 89%;
+        width: 81%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+} 
+
+
+/* @media (max-width: 480px) {
+   hero section
+    .hero-content {
+        top: 31%;
+    }
+    .hero-heading {
+        font-size: 33px;
+    }
+    .hero-para {
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    about section
+    #about-us {
+        margin-top: 133px;
+    }
+
+    .about-heading-back h3 {
+        font-size: 55px;
+       
+    }
+
+    .about-heading-back {
+        top: 18px;
+      
+    }
+    .about-para {
+       
+        padding: 15px 30px 15px 30px;
+        
+    }
+
+    .img-container {
+        height: 210px;
+    }
+
+    goals
+    #goals {
+        margin-top: 262px;
+    }
+} */

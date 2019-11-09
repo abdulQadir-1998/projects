@@ -1,0 +1,39 @@
+@media (min-width:1680px){
+
+    .hero-heading {
+        font-size: 95px;
+    }
+
+    .hero-content {
+        top: 26%;
+    }
+
+    #about-us {
+        padding-top: 30px;
+        padding-bottom: 120px;
+    }
+
+    #goals {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:1024px){
+
+    .logo-img {
+        margin-top: 20px;
+    }
+
+    .second-header {
+        padding: 0px;
+    }
+
+    .menu{
+
+        right: 50px;
+    }
+
+    .hero-content {
+        top: 22%;
+    }
+}

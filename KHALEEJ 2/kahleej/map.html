@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+
+<title>Khaleej Ship Maintenance</title>
+<script src="map.js"></script>
+<style >
+body{margin:0px; font-family:Arial, Helvetica, sans-serif;}
+h1{font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:normal;} p{font-family:Arial, Helvetica, sans-serif;} strong{font-weight:bold;} 
+.gm-style a{font-family:Arial, Helvetica, sans-serif; color:#af2024; text-decoration:none;} .gm-style a:hover{color:#333; text-decoration:none;}
+</style>
+</head><body>
+
+
+
+
+
+<script src="http://maps.google.com/maps/api/js?sensor=false&amp;key=AIzaSyCQ1vwz97xPyzKGslqY4sFvKGDcxRHx0B4&amp;language=en"></script>
+<script>
+//<![CDATA[
+// Initialisation de la carte
+var mapCourante;
+var initialLocation ;
+// defaultPosition renvoie le centre de la carte
+var defaultPosition = new google.maps.LatLng(25.714116, 55.849902);
+function initialisation() {
+
+	var options = {
+			zoom : 17,
+			center : defaultPosition,
+			mapTypeId : google.maps.MapTypeId.ROADMAP
+	};
+	
+	mapCourante = new google.maps.Map(document.getElementById("khaleej"), options);	
+	
+	
+		 
+
+
+
+
+			creerMarqueur(25.714116, 55.849902, "Khaleej Ship Maintenance", "<h1 title=\"Khaleej Ship Maintenance\">Khaleej Ship Maintenance<\/h1><p><strong>Address:<\/strong> E11 - North Ras Al Khaimah,<br\/>United Arab Emirates<\/p><p><strong>Email:<\/strong> <a href=\"mailto:gm@khaleejshipsmaintenance.com\">gm@khaleejshipsmaintenance.com<\/a><\/p><p><strong>Email:<\/strong> <a href=\"callto:+971- 52-7771 121\">+971- 52-7771 121<\/a><\/p>", false);
+
+			
+	
+}
+
+// Fonction utilitaire de cr�ation de marqueur avec l�gende
+var tblMarqueurs = new Array();
+var dealerImage = new google.maps.MarkerImage('point.png',
+  new google.maps.Size(24, 39),
+  new google.maps.Point(0,0),
+  new google.maps.Point(12, 36));
+
+var shadowImage = new google.maps.MarkerImage('point-shadow.png',
+  new google.maps.Size(52, 39),
+  new google.maps.Point(0,0),
+  new google.maps.Point(12, 39));
+function creerMarqueur(latitude, longitude, titre, infos, office) {
+	var latlng = new google.maps.LatLng(latitude, longitude);
+	var marker = new google.maps.Marker({
+		position : latlng,
+		map : mapCourante,
+		title : titre,
+        icon : (office == true)? officeImage: dealerImage,
+        shadow: shadowImage
+	});
+	tblMarqueurs.push(marker);
+	var infos = new google.maps.InfoWindow({
+			content : infos
+	});
+	google.maps.event.addListener(marker, 'mouseover', function() {
+		infos.open(mapCourante,marker);
+	});
+}
+
+function setVisibiliteMarqueurs(visibilite) {
+	for(var i=0; i<tblMarqueurs.length; i++) {
+		tblMarqueurs[i].setVisible(visibilite);
+	}
+}
+
+
+
+addEvent(window, "load", initialisation);
+//]]>
+</script>
+
+<div id="khaleej" style="width: 100%; height: 300px"></div>
+
+
+
+
+
+</body>
+
+
+</html>
+

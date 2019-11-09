@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/myStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha256-399DNRyfIpWIy1ZV0KmEIIuIQ5sBHdLu9MBtVHrNtt8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+    .collage-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  
+}
+
+.block-2 {
+    height: 320px;
+}
+.block-5 {
+    height: 178px;
+}
+.block-1,.block-4,.block-3,.block-6{
+    height: 250px;
+    width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="row collage-row">
+
+                     <div class="column ">
+                    <img src="./images/project-1.jpg" class="block-1" style="width:100%">
+                    <img src="./images/project-1.jpg" class="block-4" style="width:100%">
+                  
+    
+                  </div>
+
+                  <div class="column">
+                    <img src="./images/project-2.jpg " class="block-2" style="width:100%">
+                    <img src="./images/project-1.jpg" class="block-5" style="width:100%">
+                   
+               
+                  </div> 
+
+                  <div class="column">
+                    <img src="./images/project-1.jpg" class="block-3" style="width:100%">
+                    <img src="./images/project-1.jpg" class="block-6" style="width:100%">
+               
+          
+                  </div>
+
+                  <!-- <div class="column">
+                    <img src="./images/project-1.jpg" style="width:100%">
+                    <img src="./images/project-2.jpg" style="width:100%">
+                  </div> -->
+
+    </div>
+</body>
+
+</html>
