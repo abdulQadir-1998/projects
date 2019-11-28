@@ -1,0 +1,630 @@
+body{
+    overflow-x: hidden;
+    background-color: #FCFCFC;
+    font-family: 'Open Sans';
+}
+/**********************************************************/
+/********************* pulsate button ********************/
+/**********************************************************/
+.btn1{
+    position: relative;
+    top: 160px;
+    left: 500px;
+    outline: none;
+}
+.btn2{
+    position: relative;
+    top: 180px;
+    left: 680px;
+    outline: none;
+}
+.btn3{
+    position: relative;
+    top: 320px;
+    left: 650px;
+    outline: none;
+}
+.btn4{
+    position: relative;
+    top: 250px;
+    left: 380px;
+    outline: none;
+}
+.btn5{
+    position: relative;
+    top: 320px;
+    left: 450px;
+    outline: none;
+}
+.btn6{
+    position: relative;
+    top: 320px;
+    left: 150px;
+    outline: none;
+    /* border: 1px solid blue; */
+}
+.btn-plus {
+    background-color: #2a5889;
+    border: none;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    animation: pulsate 2s cubic-bezier(0.2, 1, 0.2, 1) infinite;
+    /* border: 1px solid blue; */
+
+}
+
+.btn-plus:hover{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    cursor: pointer;
+  }
+.btn-plus span{
+    font-size : 20px;
+    color: white;
+    /* border: 1px solid blue; */
+}
+@keyframes pulsate {
+    20% {
+        transform: scale(.8);
+        opacity: .4;
+    }
+}
+.text-1,.text-2,.text-3,.text-4,.text-5,.text-6{
+box-shadow: 0 0 2px ;
+width: 200px;
+border-radius: 10px;
+padding: 20px;
+vertical-align: middle;
+background: whitesmoke;
+color:black;
+position: relative;
+top: -120px;
+left : -80px;
+opacity: 0;
+}
+.btn-plus:hover .text-1,.btn-plus:hover .text-2,.btn-plus:hover .text-3,.btn-plus:hover .text-4,.btn-plus:hover .text-5,.btn-plus:hover .text-6 {
+    opacity: 1;
+}
+
+
+/************************************************************/
+/********************* pulsate button ending ***************/
+/**********************************************************/
+.img-wrapper{
+
+    position: relative;
+    height: 80vh;
+    /* border: 1px solid red; */
+}
+
+.img-wrapper h1{
+    position: relative;
+    top:140px;
+    /* border: 1px solid orange; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 37.4px;
+}
+
+.img-wrapper img{
+
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid red; */
+} 
+
+.link-wrapper{
+    /* border: 1px solid red; */
+    height: 80vh;
+    position: relative;
+}
+
+.link-wrapper a{
+    display: block;
+    border: 2px solid #2a5889;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2a5889;
+    
+}
+
+.link-wrapper a:hover{
+    text-decoration: none;
+    background-color: #2a5889;
+    color: white;
+    transition: .3s all ease;
+    
+}
+
+.link{
+
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+#one{
+
+    height: 60vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #2a5889;
+    color: white;
+}
+
+#one h1{
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+#one p{
+
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* section-1 */
+#section-1{
+    height: 80vh;
+}
+.section1-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section1-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section1-text {
+    margin-top: 90px;
+}
+.section1-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section1-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section1-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+    box-shadow: 0 1px 2px rgb(124, 120, 120);
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-2 */
+#section-2{
+    height: 80vh;
+    background: #f5f4f4;
+}
+.section2-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section2-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section2-text {
+    margin-top: 90px;
+}
+.section2-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section2-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section2-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-3 */
+#section-3{
+    height: 80vh;
+    background: #f5f4f4;
+}
+.section3-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section3-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section3-text {
+    margin-top: 90px;
+}
+.section3-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section3-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section3-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-4 */
+#section-4{
+    height: 80vh;
+    background: #f5f4f4;
+}
+.section4-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section4-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section4-text {
+    margin-top: 90px;
+}
+.section4-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section4-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section4-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-5 */
+#section-5{
+    height: 80vh;
+    background: #fff;
+}
+.section5-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section5-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section5-text {
+    margin-top: 90px;
+}
+.section5-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section5-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section5-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-6 */
+#section-6{
+    height: 80vh;
+    background: #fff;
+}
+.section6-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section6-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section6-text {
+    margin-top: 90px;
+}
+.section6-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section6-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section6-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-7 */
+#section-7{
+    height: 80vh;
+    background: #f5f4f4;
+}
+.section7-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section7-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section7-text {
+    margin-top: 90px;
+}
+.section7-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section7-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section7-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-8 */
+#section-8{
+    height: 80vh;
+    background: #f5f4f4;
+}
+.section8-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section8-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section8-text {
+    margin-top: 90px;
+}
+.section8-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section8-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section8-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-9 */
+#section-9{
+    height: 80vh;
+    background: #fff;
+}
+.section9-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section9-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section9-text {
+    margin-top: 90px;
+}
+.section9-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section9-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section9-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+
+/* section-10 */
+#section-10{
+    height: 80vh;
+    background: #fff;
+}
+.section10-img{
+   position: relative;
+   top:80px;
+   left: 15%;
+}
+.section10-text span {
+    position: relative;
+    top:23px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.section10-text {
+    margin-top: 90px;
+}
+.section10-text h1 {
+    font-family:  'Lato', sans-serif;
+}
+
+.section10-text p {
+    font-size: 15px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.section10-text button {
+    background: #dfdada;
+    border: none;
+    width: 541px;
+    color: black;
+    border-radius: 0px;
+}
+table {
+    font-size: 14px;
+    font-weight: 100;
+}
+ b {
+    color:#676767;    
+}
+
+/************************************************************/
+/*************************responsive************************/
+/************************************************************/

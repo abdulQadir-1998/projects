@@ -1,0 +1,11 @@
+@media(max-width: 1260px){
+
+    .img-wrapper h1 {
+        position: relative;
+        top: -560px;
+        /* border: 1px solid orange; */
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        font-size: 37.4px;
+    }
+}

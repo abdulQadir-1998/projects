@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* .btn-plus {
+            background-color: #2a5889;
+            color: white;
+            border: none;
+            border-radius: 100%;
+            height: 35px;
+            width: 35px;
+            animation: pulsate 3s cubic-bezier(0.2, 1, 0.2, 1) infinite;
+        }
+        @keyframes pulsate {
+            20% {
+                transform: scale(.8);
+                opacity: .4;
+            }
+        }
+        .btn-plus span {
+            font-size: 30px;
+        }
+
+        .fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #2a5889;
+  color:#fff;
+  font-weight: bold;
+  animation: pulsate 3s cubic-bezier(0.2, 1, 0.2, 1) infinite;
+} */
+
+        .btn1 {
+            position: relative;
+            top: 160px;
+            left: 500px;
+            outline: none;
+        }
+
+        .btn2 {
+            position: relative;
+            top: 180px;
+            left: 680px;
+            outline: none;
+        }
+
+        .btn3 {
+            position: relative;
+            top: 320px;
+            left: 650px;
+            outline: none;
+        }
+
+        .btn4 {
+            position: relative;
+            top: 250px;
+            left: 380px;
+            outline: none;
+        }
+
+        .btn5 {
+            position: relative;
+            top: 320px;
+            left: 450px;
+            outline: none;
+        }
+
+        .btn6 {
+            position: relative;
+            top: 320px;
+            left: 150px;
+            outline: none;
+            /* border: 1px solid blue; */
+        }
+
+        .btn-plus {
+            background-color: #2a5889;
+            border: none;
+            border-radius: 100%;
+            height: 30px;
+            width: 30px;
+            animation: pulsate 2s cubic-bezier(0.2, 1, 0.2, 1) infinite;
+            /* border: 1px solid blue; */
+
+        }
+
+        .btn-plus:hover {
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+
+        .btn-plus span {
+            font-size: 20px;
+            color: white;
+            /* border: 1px solid blue; */
+        }
+
+        @keyframes pulsate {
+            20% {
+                transform: scale(.8);
+                opacity: .4;
+            }
+        }
+
+        .text-4 {
+            box-shadow: 0 0 2px;
+            width: 200px;
+            border-radius: 10px;
+            padding: 20px;
+            vertical-align: middle;
+            background: whitesmoke;
+            color: black;
+            position: relative;
+            top: 100px;
+            left: -180px;
+            opacity: 0;
+            /* border: 1px solid blue; */
+        }
+
+        .text-1,
+        .text-2,
+        .text-3,
+        .text-4,
+        .text-5,
+        .text-6 {
+            box-shadow: 0 0 2px;
+            width: 200px;
+            border-radius: 10px;
+            padding: 20px;
+            vertical-align: middle;
+            background: whitesmoke;
+            color: black;
+            position: relative;
+            top: -120px;
+            left: -80px;
+            visibility: hidden;
+            /* border: 1px solid blue; */
+        }
+
+        .btn-plus:hover .text-1,
+        .btn-plus:hover .text-2,
+        .btn-plus:hover .text-3,
+        .btn-plus:hover .text-4,
+        .btn-plus:hover .text-5,
+        .btn-plus:hover .text-6 {
+            visibility: visible;
+        }
+
+
+        /************************************************************/
+        /********************* pulsate button ending ***************/
+        /**********************************************************/
+        .img-wrapper {
+
+            position: relative;
+            height: 80vh;
+            /* border: 1px solid red; */
+        }
+
+        .img-wrapper h1 {
+            position: relative;
+            top: 160px;
+            /* border: 1px solid orange; */
+            font-family: 'Lato', sans-serif;
+            font-weight: 200;
+            font-size: 37.4px;
+        }
+
+        .img-wrapper img {
+
+            position: absolute;
+            top: 50%;
+            left: 68%;
+            transform: translate(-50%, -50%);
+            /* border: 1px solid red; */
+        }
+
+        .link-wrapper {
+            /* border: 1px solid red; */
+            height: 80vh;
+            position: relative;
+        }
+
+        .link-wrapper a {
+            display: block;
+            border: 2px solid #2a5889;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            color: #2a5889;
+
+        }
+
+        .link-wrapper a:hover {
+            text-decoration: none;
+            background-color: #2a5889;
+            color: white;
+            transition: .3s all ease;
+
+        }
+
+        .link {
+
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .img-wrapper .btn-wrapper {
+    height: 22px;
+    width: 22px;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    display: block;
+}
+
+.img-wrapper .btn-wrapper:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 22px;
+    height: 22px;
+    margin: -11px auto auto -11px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border-radius: 50%;
+    background-color: inherit;
+    opacity: 1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.img-wrapper .btn-wrapper span {
+    display: block;
+    pointer-events: none;
+    transition: transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+    width: 22px;
+    height: 22px;
+}
+
+
+.img-wrapper .btn-wrapper .text-wrapper[data-tooltip-position="top"] {
+    margin-top: -20px;
+    margin-left: 6px;
+    -ms-transform: translateX(-50%) translateY(-100%);
+    transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-100%);
+}
+
+.img-wrapper[data-tooltip_shadow="small_depth"] .btn-wrapper .text-wrapper {
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.15);
+}
+.img-wrapper .btn-wrapper .text-wrapper {
+    position: relative;
+    display: block;
+    opacity: 0;
+    z-index: 900;
+    cursor: default;
+    background-color: #fff;
+    padding: 23px;
+    max-width: 250px;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    line-height: 22px;
+    font-size: 14px;
+    color: #666666;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- <button class="btn-plus">
+        <span>+</span>
+    </button>
+    <a href="#" class="fa">+</a> -->
+
+    <div class="row">
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <div class="img-wrapper">
+                <h1 class="text-right">Electronic Shelf L@bel</h1>
+
+                <img src="images/stellar-barcode.gif" alt="gif-item" height="auto" width="70%">
+                <!-------------------------------------------------------------->
+                <!------------------------ pulsate button ---------------------->
+                <!-------------------------------------------------------------->
+
+                <!-- 1st button -->
+                <div class="btn-wrapper" style="top: 3.54331%; left: 48.7016%; width: 30px;">
+                    <button class="btn-plus btn1">
+                        <span>+</span>
+                    </button>
+                </div>
+                <div class="text-wrapper" data-tooltip-position="top" style="height: auto; width: 250px;">
+                    <div class="inner-txt">
+                        Support Multi Language
+                    </div>
+                </div>
+                <!-- 2nd button -->
+                <button class="btn-plus btn2">
+                    <span>+</span>
+                    <div class="text-2">
+                        <p>Three-color LED flash, reminding goods inventory information, promotions, shelf life,
+                            etc.</p>
+                    </div>
+                </button>
+                <!-- 3rd button -->
+                <button class="btn-plus btn3">
+                    <span>+</span>
+                    <div class="text-3">
+                        <p>Bar code in the front side, for improved information exchange with operator</p>
+                    </div>
+                </button>
+                <!-- 4th button -->
+                <button class="btn-plus btn4">
+                    <span>+</span>
+                    <div class="text-4">
+                        <p> Dot matrix screen, flexible display text, numbers, images, with customized templates.
+                        </p>
+                    </div>
+                </button>
+                <!-- 5th button -->
+                <button class="btn-plus btn5">
+                    <span>+</span>
+                    <div class="text-5">
+                        <p> Achieving interaction between online and offline interaction with bar codes and QR
+                            codes, to make better shopping experience.</p>
+                    </div>
+                </button>
+                <!-- 6th button -->
+                <button class="btn-plus btn6">
+                    <span>+</span>
+                    <div class="text-6">
+                        <p> Multi-screen flip, show more product information.</p>
+                    </div>
+                </button>
+
+
+            </div>
+            <!--img-wrapper-->
+        </div>
+        <!--col-md-8-->
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="link-wrapper">
+                <div class="link">
+                    <a href="#section-1">Display: 1.54 inch</a>
+                    <a href="#section-2">Display: 2.1 inch</a>
+                    <a href="#section-3">Display: 2.1 inch</a>
+                    <a href="#section-4">Display: 2.66 inch</a>
+                    <a href="#section-5">Display: 2.6 inch</a>
+                    <a href="#section-6">Display: 2.9 inch</a>
+                    <a href="#section-7">Display: 4.2 inch</a>
+                    <a href="#section-8">Display: 5.8 inch</a>
+                    <a href="#section-9">Display: 7.5 inch</a>
+                    <a href="#section-10">Display: 10.2 inch</a>
+                </div>
+                <!--link-->
+            </div>
+            <!--link-wrapper-->
+        </div>
+        <!--col-md-4-->
+    </div>
+
+</body>
+
+</html>
