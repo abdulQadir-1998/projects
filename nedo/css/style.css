@@ -1,14 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
     background-color: #FCFCFC;
     font-family: 'Open Sans';
+    overflow-x: hidden;
 }
 /**********************************************************/
 /********************* pulsate button ********************/
 /**********************************************************/
 .btn1{
     position: relative;
-    top: 160px;
+    top: 180px;
     left: 500px;
     outline: none;
 }
@@ -26,31 +30,30 @@ body{
 }
 .btn4{
     position: relative;
-    top: 250px;
-    left: 380px;
-    outline: none;
-}
-.btn5{
-    position: relative;
     top: 320px;
     left: 450px;
     outline: none;
 }
+.btn5{
+    position: relative;
+    top: 250px;
+    left: 350px;
+    outline: none;
+}
 .btn6{
     position: relative;
-    top: 320px;
+    top: 330px;
     left: 150px;
     outline: none;
-    /* border: 1px solid blue; */
 }
 .btn-plus {
-    background-color: #2a5889;
+    background-color: #432875;
     border: none;
     border-radius: 100%;
     height: 30px;
     width: 30px;
-    animation: pulsate 2s cubic-bezier(0.2, 1, 0.2, 1) infinite;
-    /* border: 1px solid blue; */
+    animation: pulsate 1s infinite;
+
 
 }
 
@@ -64,15 +67,18 @@ body{
 .btn-plus span{
     font-size : 20px;
     color: white;
-    /* border: 1px solid blue; */
 }
 @keyframes pulsate {
     20% {
-        transform: scale(.8);
-        opacity: .4;
+        transform:scale(.95);
     }
 }
-.text-1,.text-2,.text-3,.text-4,.text-5,.text-6{
+
+.btn-plus:hover .text-1,.btn-plus:hover .text-2,.btn-plus:hover .text-3,.btn-plus:hover .text-4,.btn-plus:hover .text-5,.btn-plus:hover .text-6 {
+    display: block;
+}
+
+.text-1{
 box-shadow: 0 0 2px ;
 width: 200px;
 border-radius: 10px;
@@ -80,23 +86,96 @@ padding: 20px;
 vertical-align: middle;
 background: whitesmoke;
 color:black;
-position: relative;
-top: -120px;
+position: absolute;
+top: -80px;
 left : -80px;
-opacity: 0;
+display: none;
+z-index: 1000;
 }
-.btn-plus:hover .text-1,.btn-plus:hover .text-2,.btn-plus:hover .text-3,.btn-plus:hover .text-4,.btn-plus:hover .text-5,.btn-plus:hover .text-6 {
-    opacity: 1;
+.text-2{
+    box-shadow: 0 0 2px ;
+width: 180px;
+border-radius: 10px;
+padding: 10px;
+vertical-align: middle;
+background: whitesmoke;
+color:black;
+position: absolute;
+top: -125px;
+left : -80px;
+display: none;
+z-index: 1000;
+}
+.text-3{
+    box-shadow: 0 0 2px ;
+width: 200px;
+border-radius: 10px;
+padding: 20px;
+vertical-align: middle;
+background: whitesmoke;
+color:black;
+position: absolute;
+top: 40px;
+left : -80px;
+display: none;
+z-index: 1000;
+}
+.text-4{
+    box-shadow: 0 0 2px ;
+width: 200px;
+border-radius: 10px;
+padding: 20px;
+vertical-align: middle;
+background: whitesmoke;
+color:black;
+position: absolute;
+top: 35px;
+left : -80px;
+display: none;
+z-index: 1000;
+}
+.text-5{
+    box-shadow: 0 0 2px ;
+width: 200px;
+border-radius: 10px;
+padding: 20px;
+vertical-align: middle;
+background: whitesmoke;
+color:black;
+position: absolute;
+top: 50px;
+left : -80px;
+display: none;
+z-index: 1000;
+}
+.text-6{
+    box-shadow: 0 0 2px ;
+width: 200px;
+border-radius: 10px;
+padding: 20px;
+vertical-align: middle;
+background: whitesmoke;
+color:black;
+position: absolute;
+top: 35px;
+left : -80px;
+display: none;
+z-index: 1000;
 }
 
 
 /************************************************************/
 /********************* pulsate button ending ***************/
 /**********************************************************/
+
+#section0{
+    background: #FAFCFF;
+    
+}
 .img-wrapper{
 
     position: relative;
-    height: 80vh;
+    height: 700px;
     /* border: 1px solid red; */
 }
 
@@ -115,28 +194,30 @@ opacity: 0;
     top: 50%;
     left: 68%;
     transform: translate(-50%,-50%);
-    /* border: 1px solid red; */
 } 
 
+    /********************************************/
+    /*************top link-wrapper**************/
+    /********************************************/
+
 .link-wrapper{
-    /* border: 1px solid red; */
-    height: 80vh;
+    height: 700px;
     position: relative;
 }
 
 .link-wrapper a{
     display: block;
-    border: 2px solid #2a5889;
+    border: 2px solid #432875;
     text-align: center;
     padding: 10px;
     margin-top: 10px;
-    color: #2a5889;
+    color: #432875;
     
 }
 
 .link-wrapper a:hover{
     text-decoration: none;
-    background-color: #2a5889;
+    background-color: #432875;
     color: white;
     transition: .3s all ease;
     
@@ -150,35 +231,51 @@ opacity: 0;
     transform: translate(-50%,-50%);
 }
 
-#one{
+/*******************************************************************/
+/********************* blue section area***************************/
+/*****************************************************************/
 
-    height: 60vh;
+.ones-bg {
+
+    height: 500px;
+    background-color: #432875;
     width: 100%;
-    /* border: 1px solid red; */
-    background-color: #2a5889;
-    color: white;
 }
-
-#one h1{
+.ones {
+   padding: 40px 60px;
+   
+}
+.ones h1{
     font-family: 'Lato', sans-serif;
     margin-bottom: 40px;
-    margin-top: 70px;
+    color: white;
+    padding-left:100px;
 }
 
-#one p{
+.ones p{
 
     font-weight: 300;
     font-size: 17px;
     line-height: 140%;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
     font-family: 'Lato', sans-serif;
+    color: white;
+    padding-left: 100px;
+}
+
+.section1-text button:hover,.section2-text button:hover,.section3-text button:hover,
+.section4-text button:hover,.section5-text button:hover,.section6-text button:hover,
+.section7-text button:hover,.section8-text button:hover,.section9-text button:hover,
+.section10-text button:hover{
+    transition: .4s ease ;
+    background: #432875;
 }
 
 
-/* section-1 */
+    /********************************************/
+    /****************section - 1*****************/
+    /********************************************/
 #section-1{
-    height: 80vh;
+    height: 650px;
 }
 .section1-img{
    position: relative;
@@ -220,10 +317,13 @@ table {
     color:#676767;    
 }
 
+ /********************************************/
+    /****************section - 2*****************/
+    /********************************************/
 
-/* section-2 */
+
 #section-2{
-    height: 80vh;
+    height: 650px;
     background: #f5f4f4;
 }
 .section2-img{
@@ -266,9 +366,12 @@ table {
 }
 
 
-/* section-3 */
+ /********************************************/
+    /****************section - 3*****************/
+    /********************************************/
+
 #section-3{
-    height: 80vh;
+    height: 650px;
     background: #f5f4f4;
 }
 .section3-img{
@@ -311,9 +414,11 @@ table {
 }
 
 
-/* section-4 */
+ /********************************************/
+    /****************section - 4*****************/
+    /********************************************/
 #section-4{
-    height: 80vh;
+    height: 650px;
     background: #f5f4f4;
 }
 .section4-img{
@@ -356,9 +461,11 @@ table {
 }
 
 
-/* section-5 */
+ /********************************************/
+    /****************section - 5*****************/
+    /********************************************/
 #section-5{
-    height: 80vh;
+    height: 650px;
     background: #fff;
 }
 .section5-img{
@@ -401,9 +508,11 @@ table {
 }
 
 
-/* section-6 */
+ /********************************************/
+    /****************section - 6*****************/
+    /********************************************/
 #section-6{
-    height: 80vh;
+    height: 650px;
     background: #fff;
 }
 .section6-img{
@@ -446,9 +555,11 @@ table {
 }
 
 
-/* section-7 */
+    /********************************************/
+    /****************section - 7*****************/
+    /********************************************/
 #section-7{
-    height: 80vh;
+    height: 650px;
     background: #f5f4f4;
 }
 .section7-img{
@@ -491,9 +602,11 @@ table {
 }
 
 
-/* section-8 */
+    /********************************************/
+    /****************section - 8*****************/
+    /********************************************/
 #section-8{
-    height: 80vh;
+    height: 650px;
     background: #f5f4f4;
 }
 .section8-img{
@@ -535,10 +648,12 @@ table {
     color:#676767;    
 }
 
-
-/* section-9 */
+    
+    /********************************************/
+    /****************section - 9*****************/
+    /********************************************/
 #section-9{
-    height: 80vh;
+    height: 650px;
     background: #fff;
 }
 .section9-img{
@@ -580,10 +695,11 @@ table {
     color:#676767;    
 }
 
-
-/* section-10 */
+    /*********************************************/
+    /****************section - 10*****************/
+    /********************************************/
 #section-10{
-    height: 80vh;
+    height: 650px;
     background: #fff;
 }
 .section10-img{
@@ -625,6 +741,949 @@ table {
     color:#676767;    
 }
 
+
 /************************************************************/
-/*************************responsive************************/
-/************************************************************/
+    /********************* responsive **********************/
+/**********************************************************/
+@media(max-width:1260px){
+    .img-wrapper h1{
+        top: 150px;
+    }
+    .btn1{
+        top:180px;
+    }
+    .btn2{
+        top:190px;
+    }
+    .btn4{
+        top:320px;
+    }
+}
+
+@media(max-width:1199px){
+    /* pulsate buttons */
+    .btn1{
+        top:190px;
+        left: 400px;
+    }
+    .btn2{
+        top:200px;
+        left: 550px;
+    }
+    .btn3{
+        top:320px;
+        left: 515px;
+    }
+    .btn4{
+        top:320px;
+        left: 350px;
+    }
+    .btn5{
+        top:260px;
+        left: 240px;
+    }
+    .btn6{
+        top:330px;
+        left: 80px;
+    }
+
+    /* side links */
+
+    .link-wrapper{
+        height: auto;
+        top: 350px;
+    }
+    .link-wrapper a {
+        font-size: 12px;
+    }
+
+    /********* esl sections **********/
+    #one {
+        height: 400px;
+    }
+    /********* # sections - 1 **********/
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 442px;
+    }
+    .text-1{
+        top: -60px;
+        font-size: 12px; 
+        padding: 10px;
+    }
+    .text-2{
+     top: -110px; 
+     font-size: 12px;  
+    }
+    .text-3{
+        top:40px;
+        font-size: 12px; 
+    }
+    .text-4{
+        top:40px;
+        font-size: 12px; 
+    }
+    .text-5{
+        width:150px;
+        top:40px;
+        font-size: 12px; 
+    }
+    .text-6{
+        top: 40px;
+        font-size: 12px; 
+    }
+}
+
+
+@media(max-width:991px){
+    /************* esl heading ************/
+    .img-wrapper h1{
+        top: 200px;
+        font-size:30px;
+    }
+    /* pulsate buttons */
+    .btn-plus{
+        height: 25px;
+        width :25px;
+    }
+    .btn-plus span{
+        font-size: 15px;
+    }
+    .btn1{
+        top:210px;
+        left: 300px;
+    }
+    .btn2{
+        top:230px;
+        left: 420px;
+    }
+    .btn3{
+        top:310px;
+        left: 390px;
+    }
+    .btn4{
+        top:320px;
+        left: 260px;
+    }
+    .btn5{
+        top:270px;
+        left: 175px;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: 50px;
+    }
+
+    /* side links */
+
+    .link-wrapper{
+        height: auto;
+        top: 350px;
+    }
+    .link-wrapper a {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    /********* esl sections **********/
+    #one {
+        height: 400px;
+    }
+    /********* # sections - 1 **********/
+    .section1-img{
+        height: 700px;
+        width:700px;
+        left: -35%;
+        top: -20px;
+    }
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 331px;
+    }
+    .text-1{
+        top: -50px;
+        font-size: 12px; 
+        padding: 10px;
+    }
+    .text-2{
+     top: -110px; 
+     font-size: 12px;  
+    }
+    .text-3{
+        top:30px;
+        font-size: 12px; 
+    }
+    .text-4{
+        top:30px;
+        font-size: 12px; 
+    }
+    .text-5{
+        width:150px;
+        top:30px;
+        font-size: 12px;
+        padding: 5px; 
+        z-index: 1000;
+    }
+    .text-6{
+        top: 30px;
+    }
+}
+
+
+@media(max-width:767px){
+
+    /************* esl heading ************/
+ 
+    .img-wrapper h1{
+        text-align: center;
+        top: 150px;
+        font-size:38px;
+    }
+    .img-wrapper img{
+        left: 370px;
+    }
+    /* pulsate buttons */
+    .btn1{
+        top:185px;
+        left: 350px;
+    }
+    .btn2{
+        top:200px;
+        left: 540px;
+    }
+    .btn3{
+        top:330px;
+        left: 510px;
+    }
+    .btn4{
+        top:320px;
+        left: 330px;
+    }
+    .btn5{
+        top:250px;
+        left: 215px;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: 30px;
+    }
+
+    /* side links */
+
+    .link-wrapper{
+        height: 300px;
+        top: -100px;
+        left: 10%;
+        
+    }
+    .link-wrapper a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+  
+    /********* # sections - 1 **********/
+    #section-1,#section-2,#section-3,
+    #section-4,#section-5,#section-6,
+    #section-7,#section-8,#section-9,
+    #section-10{
+        height: 850px;
+        text-align: center;
+    }
+    .section1-img,.section2-img,.section3-img,
+    .section4-img,.section5-img,.section6-img,
+    .section7-img,.section8-img,.section9-img,
+    .section10-img{
+        height: auto;
+        width:100%;
+        left: 5px;
+    }
+    .section1-text,.section2-text,.section3-text,
+    .section4-text,.section5-text,.section6-text,
+    .section7-text,.section8-text,.section9-text,
+    .section10-text{
+        margin-top: -120px;
+        padding: 0 60px 0 60px;
+    }
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 587px;
+    }
+    /*pulsate button hover texts */
+    .text-1{
+        top: -60px;
+        font-size: 12px; 
+        padding: 10px;
+    }
+    .text-2{
+     top: -115px; 
+     font-size: 12px;  
+    }
+    .text-3{
+        top:30px;
+        font-size: 12px; 
+    }
+    .text-4{
+        top:30px;
+        font-size: 12px; 
+    }
+    .text-5{
+        width:150px;
+        top:30px;
+        font-size: 12px; 
+    }
+    .text-6{
+        top: 30px;
+    }
+
+    /********** section 4 image*******/
+    .section4-img{
+        height: auto;
+        width:100%;
+        left: 5px;
+        top: -20px;
+    }
+
+    /********** section 5 image*******/
+    .section5-img{
+        height: auto;
+        width:100%;
+        left: 5px;
+        top: -20px;
+    }
+    /********** section 6 image*******/
+    .section6-img{
+        height: auto;
+        width:100%;
+        left: 5px;
+        top: -20px;
+    }
+    /********** section 7 image*******/
+    .section7-img{
+        height: auto;
+        width:100%;
+        left: 5px;
+        top: -20px;
+    }
+    /********** section 8 image*******/
+    .section8-img{
+        height: auto;
+        width:90%;
+        left: 35px;
+        top: -30px;
+    }
+     /********** section 9 image*******/
+     .section9-img{
+        height: 400px;
+        width:90%;
+        left: 35px;
+        top: -20px;
+    }
+     /********** section 10 image*******/
+     .section10-img{
+        height: 400px;
+        width:90%;
+        left: 35px;
+        top: -20px;
+    }
+}
+
+
+@media screen and (max-width:680px){
+    #section0{
+        height: 1000px;
+    }
+  
+    .img-wrapper{
+        left: 20px;
+    }
+    .img-wrapper img{
+        left: 320px;
+    }
+    /* pulsate buttons */
+    .btn-plus{
+        height: 25px;
+        width :25px;
+    }
+    .btn-plus span{
+        font-size: 15px;
+    }
+    .btn1{
+        top:180px;
+        left: 300px;
+    }
+    .btn2{
+        top:200px;
+        left: 470px;
+    }
+    .btn3{
+        top:310px;
+        left: 440px;
+    }
+    .btn4{
+        top:320px;
+        left: 280px;
+    }
+    .btn5{
+        top:250px;
+        left: 170px;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: 0px;
+    }
+
+    /********* # sections **********/
+   
+    
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 500px;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+    #section0{
+        height: 1000px;
+    }
+  
+    .img-wrapper{
+        left: 10px;
+    }
+    .img-wrapper img{
+        left: 290px;
+    }
+    /* pulsate buttons */
+ 
+    .btn1{
+        top:200px;
+        left: 270px;
+    }
+    .btn2{
+        top:200px;
+        left: 420px;
+    }
+    .btn3{
+        top:310px;
+        left: 390px;
+    }
+    .btn4{
+        top:320px;
+        left: 240px;
+    }
+    .btn5{
+        top:260px;
+        left: 130px;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: -10px;
+    }
+
+    .ones{
+        padding: 10px;
+    }
+    /********* # sections **********/
+   
+    
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 420px;
+    }
+    .section8-img{
+        top: -50px;
+    }
+}
+
+
+@media screen and (max-width:530px){
+
+    .img-wrapper{
+        left: 10px;
+    }
+    .img-wrapper img{
+        left: 240px;
+        width: 100%;
+        height: auto;
+    }
+    /* pulsate buttons */
+ 
+    .btn1{
+        top:180px;
+        left: 220px;
+    }
+    .btn2{
+        top:200px;
+        left: 410px;
+    }
+    .btn3{
+        top:310px;
+        left: 380px;
+    }
+    .btn4{
+        top:320px;
+        left: 200px;
+    }
+    .btn5{
+        top:260px;
+        left: 100px;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: -90px;
+    }
+
+    .ones{
+        padding: 10px;
+    }
+    /********* # sections **********/
+   
+    
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 350px;
+    }
+    .section8-img{
+        top: -50px;
+    }
+    /* texts-area */
+    .text-2{
+        left: -120px;
+    }
+    .text-3{
+        top: 40px;
+        left: -140px;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    .img-wrapper img{
+        height: auto;
+        width: 100%;
+        left: 210px;
+    }
+    /* pulsate buttons */
+
+    .btn1{
+        top:180px;
+        left: 200px;
+    }
+    .btn2{
+        top:200px;
+        left: 360px;
+    }
+    .btn3{
+        top:300px;
+        left: 330px;
+
+    }
+    .btn4{
+        top:320px;
+        left: 170px;
+    }
+    .btn5{
+        top:260px;
+        left: 60px !important;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: -100px;
+    }
+
+    .ones-bg{
+        height: 600px;
+    }
+    .ones h1{
+        padding: 30px;
+        margin-bottom: 10px;
+    }
+    .ones p{
+        padding: 30px;
+    }
+    /********* # sections **********/
+   
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 380px;
+    }
+    .section1-text,.section2-text,.section3-text,
+    .section4-text,.section5-text,.section6-text,
+    .section7-text,.section8-text,.section9-text,
+    .section10-text{
+        padding: 0 20px 0 20px;
+    }
+
+      /********** section 7 image*******/
+      .section7-img{
+        top:-60px;
+    }
+    /********** section 8 image*******/
+    .section8-img{
+        top:-60px;
+    }
+       /********** section 9 image*******/
+       .section9-img{
+        height: 300px;
+        width:90%;
+        left: 35px;
+        top: -30px;
+    }
+     /********** section 10 image*******/
+     .section10-img{
+        height: 300px;
+        width:90%;
+        left: 35px;
+        top: -30px;
+    }
+
+}
+
+
+@media screen and (max-width:400px){
+
+    .img-wrapper img{
+        height: auto;
+        width: 100%;
+        left: 180px;
+    }
+    .img-wrapper h1{
+        font-size:30px;
+    }
+    /* pulsate buttons */
+
+    .btn1{
+        top:210px;
+        left: 150px;
+    }
+    .btn2{
+        top:230px;
+        left: 295px;
+    }
+    .btn3{
+        top:310px;
+        left: 265px;
+
+    }
+    .btn4{
+        top:320px;
+        left: 120px;
+    }
+    .btn5{
+        top:270px;
+        left: 30px !important;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: -100px;
+    }
+
+    .ones-bg{
+        height: 600px;
+    }
+    .ones h1{
+        padding: 30px;
+        margin-bottom: 10px;
+    }
+    .ones p{
+        padding: 30px;
+    }
+    .text-2{
+        left: -130px;
+        padding: 4px;
+    }
+    .text-3{
+        top:40px;
+        left: -150px;
+        padding: 4px;
+    }
+    .text-6{
+        padding: 5px;
+        left: -30px;
+    }
+
+    .link-wrapper{
+        top: -140px;
+        }
+
+        .ones-bg{
+            height: 700px;
+        }
+        .ones p {
+            padding: 10px;
+        }
+    /********* # sections **********/
+   
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 300px;
+    }
+
+}
+
+
+
+@media screen and (max-width:375px){
+
+    .img-wrapper img{
+        height: auto;
+        width: 100%;
+        left: 170px;
+    }
+    .img-wrapper h1{
+        font-size:30px;
+    }
+    /* pulsate buttons */
+
+    .btn1{
+        top:220px;
+        left: 150px;
+    }
+    .btn2{
+        top:230px;
+        left: 275px;
+    }
+    .btn3{
+        top:310px;
+        left: 245px;
+
+    }
+    .btn4{
+        top:320px;
+        left: 110px;
+    }
+    .btn5{
+        top:270px;
+        left: 30px !important;
+        padding:3px;
+    }
+    .text-2{
+        left: -140px;
+        padding: 4px;
+    }
+    
+    /********* # sections **********/
+   
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 275px;
+    }
+
+    .section4-img{
+        margin-bottom: 20px;
+    }
+    .section5-img{
+        margin-bottom: 20px;
+    }
+    .section6-img{
+        margin-bottom: 20px;
+    }
+    .section8-img{
+        left: 18px;
+        margin-bottom: 15px;
+    }
+    .section9-img{
+        left: 18px;
+        margin-bottom: 5px;
+        margin-top: 8px;
+    }
+    .section10-img{
+        left: 18px;
+        margin-bottom: 5px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width:320px){
+    #section0{
+        height:1100px;
+    }
+    .img-wrapper img{
+        height: auto;
+        width: 100%;
+        left: 135px;
+    }
+    .img-wrapper h1{
+        text-align: center;
+        font-size: 25px;
+        top: 150px;
+    }
+
+/* links wrapper */
+    .link-wrapper{
+        top: -120px;
+    }
+      
+    /* pulsate buttons */
+    .btn1{
+        top:230px;
+        left: 100px;
+    }
+    .btn2{
+        top:250px;
+        left: 220px;
+    }
+    .btn3{
+        top:320px;
+        left: 190px;
+    }
+    .btn4{
+        top:320px;
+        left: 70px;
+    }
+    .btn5{
+        top:280px;
+        left: -15px !important;
+        padding:3px;
+    }
+    .btn6{
+        top:320px;
+        left: -130px;
+    }
+
+    
+
+    /**********pulsate button hover texts *********/
+
+    .text-1{
+        top: -50px;
+        font-size: 12px;
+    }
+    .text-2{
+     top: -100px; 
+     left: -140px;  
+    }
+    .text-3{
+        top:40px;
+        left: -160px;  
+    }
+    .text-4{
+        top:30px; 
+        left: -145px;
+    }
+    .text-5{
+        width:180px;
+        top:30px;
+        font-size: 12px; 
+    }
+    .text-6{
+        top: 40px;
+    }
+
+
+    /********* # sections **********/
+   
+    .section1-text button,.section2-text button,
+    .section3-text button,.section4-text button,
+    .section5-text button,.section6-text button,
+    .section7-text button,.section8-text button,
+    .section9-text button,.section10-text button{
+        width: 240px;
+    }
+    .section1-text,.section2-text,.section3-text,
+    .section4-text,.section5-text,.section6-text,
+    .section7-text,.section8-text,.section9-text,
+    .section10-text{
+        padding: 0 10px 0 10px;
+    }
+    /********** section 1 image*******/
+    .section1-img{
+        left: -3px;
+        top: -50px;
+    }
+    /********** section 4 image*******/
+    .section4-img{
+        left: -3px;
+        top: -50px;
+    }
+
+     /********** section5  image*******/
+     .section5-img{
+       left: -3px;
+       top: -50px;
+    }
+
+        /********** section 6 image*******/
+        .section6-img{
+            left: -3px;
+            top: -50px;
+        }
+ 
+    /********** section 7 image*******/
+    #section-7{
+        height: 1250px;
+    }
+    
+    .section7-img{
+        height: 200px;
+        top: -40px;
+    }
+
+    /********** section 8 image*******/
+    #section-8{
+        height: 1250px;
+    }
+    .section8-img{
+        height: 200px;
+        top: -50px;
+        left: 22px;
+    }
+       /********** section 9 image*******/
+       #section-9{
+        height: 1250px;
+    }
+       
+       .section9-img{
+        height: 200px;
+        width:90%;
+        left: 18px;
+        top: 10px;
+        margin-bottom: 50px;
+    }
+     /********** section 10 image*******/
+     .section10-img{
+        height: 200px;
+        width:90%;
+        left: 18px;
+        top: 10px;
+        margin-bottom: 50px;
+    }
+
+}
