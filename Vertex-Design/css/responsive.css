@@ -341,8 +341,18 @@
         -webkit-background-clip: text;
         color: transparent;
     }
+    
     .contacts-link a i {
         text-shadow: 0 0 3px black;
+    }
+    .contacts-link a i:hover{
+        text-shadow: none;
+    }
+}
+@media(max-width:325px){
+    .banner-text {
+        left: 30px;
+        top: 100px;
     }
 }
 @media(max-width:320px){
