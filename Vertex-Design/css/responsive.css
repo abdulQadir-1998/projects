@@ -1,0 +1,352 @@
+@media(max-width:1024px) {
+    /***************************************************/
+    /***************** banner-responsive ****************/
+    /***************************************************/
+    .banner-text {
+        top: 150px;
+    }
+    .banner-text h1 {
+        font-size: 40px;
+    }
+    .banner-text {
+        left: 32%;
+    }
+    nav span i.fa {
+        font-size: 35px;
+    }
+    .contacts-link {
+        top:150px;
+    }
+    .sidenav a {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:800px) {
+    /***************************************************/
+    /***************** banner-responsive ****************/
+    /***************************************************/
+    .banner-text h1 {
+        font-size: 35px;
+    }
+    .banner-text {
+        left: 28%;
+    }
+    nav span i.fa {
+        font-size: 30px;
+    }
+    .contacts-link {
+        top: 130px;
+    }
+    .sidenav a {
+        font-size: 24px;
+    }
+    nav .web-logo img {
+        height: auto;
+        width: 75%;
+    }
+    .sidenav a {
+        padding: 0px 8px 8px 122px;
+    }
+}
+
+@media(max-width:767px) {
+    /***************************************************/
+    /***************** banner-responsive ****************/
+    /***************************************************/
+    nav span i.fa {
+        font-size: 30px;
+    }
+    .contacts-link a i {
+        font-size: 25px;
+    }
+    .contacts-link a i:hover {
+        height: 40px;
+        width: 40px;
+    }
+    /****** side navigation *****/
+    .sidenav a {
+        font-size: 24px;
+    }
+    nav .web-logo img {
+        height: auto;
+        width: 75%;
+    }
+    .sidenav a {
+        padding: 10px 8px 8px 15px;
+        text-align: center;
+    }
+    .sidenav {
+        background-color: rgba(243, 125, 35, 0.959);
+    }
+}
+
+@media(max-width:700px) {
+    /***************************************************/
+    /***************** banner-responsive ****************/
+    /***************************************************/
+    nav span i.fa {
+        font-size: 30px;
+    }
+    /******** center headings *******/
+    .banner-text{
+        top: 100px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text h3 {
+        font-size: 15px;
+    }
+    /********* side-contacts link ********/
+    .contacts-link {
+        top: 90px;
+        right: 2%;
+    }
+    .contacts-link a i {
+        font-size: 25px;
+    }
+    .contacts-link a i:hover {
+        height: 40px;
+        width: 40px;
+    }
+    /****** side navigation *****/
+    .sidenav a {
+        font-size: 24px;
+    }
+    nav .web-logo img {
+        height: auto;
+        width: 75%;
+    }
+    .sidenav a {
+        padding: 10px 8px 8px 15px;
+        text-align: center;
+    }
+    .sidenav {
+        background-color: rgba(243, 125, 35, 0.959);
+    }
+}
+
+@media(max-width:604px){
+    .contacts-link{
+        top: 60px;
+    }
+}
+
+@media(max-width:600px) {
+    /***************************************************/
+    /***************** banner-responsive ****************/
+    /***************************************************/
+    nav span i.fa {
+        font-size: 30px;
+    }
+    /******** center headings *******/
+    .banner-text {
+        left: 28%;
+        top: 80px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text h3 {
+        font-size: 15px;
+    }
+    /********* side-contacts link ********/
+    .contacts-link {
+        top: 80px;
+        right: 2%;
+    }
+    .contacts-link a i {
+        font-size: 25px;
+        background: transparent;
+    }
+    .contacts-link a {
+        margin-top: 8px;
+    }
+    .contacts-link a i:hover {
+        height: 40px;
+        width: 40px;
+    }
+    /****** side navigation *****/
+    nav span i.fa {
+        font-size: 28px;
+    }
+    .sidenav a {
+        font-size: 24px;
+    }
+    nav .web-logo img {
+        height: auto;
+        width: 75%;
+    }
+    .sidenav a {
+        padding: 10px 8px 8px 15px;
+        text-align: center;
+    }
+    .sidenav {
+        background-color: rgba(243, 125, 35, 0.959);
+    }
+}
+
+@media(max-width:530px) {
+    /***************************************************/
+    /***************** banner-responsive ****************/
+    /***************************************************/
+    nav span i.fa {
+        font-size: 30px;
+    }
+    /******** center headings *******/
+    .banner-text {
+        left: 25%;
+        top: 80px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text h3 {
+        font-size: 15px;
+    }
+    /********* side-contacts link ********/
+    .contacts-link {
+        top: 70px;
+        right: 1%;
+    }
+    .contacts-link a i {
+        font-size: 22px;
+        background: transparent;
+    }
+    .contacts-link a {
+        margin-top: 3px;
+    }
+    .contacts-link a i:hover {
+        height: 40px;
+        width: 40px;
+    }
+    /****** side navigation *****/
+    nav .web-logo img {
+        height: auto;
+        width: 65%;
+    }
+}
+
+@media(max-width:500px) {
+    /***************************************************/
+    /***************** banner-responsive ****************/
+    /***************************************************/
+    /******** center headings *******/
+    .banner-text {
+        left: 25%;
+        top: 70px;
+    }
+    .banner-text h1 {
+        font-size: 26px;
+    }
+    .banner-text h3 {
+        font-size: 15px;
+    }
+    /********* side-contacts link ********/
+    .contacts-link {
+        top: 70px;
+        right: 1%;
+    }
+    .contacts-link a i {
+        font-size: 22px;
+        background: transparent;
+    }
+    .contacts-link a {
+        margin-top: 3px;
+    }
+    .contacts-link a i:hover {
+        height: 40px;
+        width: 40px;
+    }
+    /****** side navigation *****/
+    nav span i.fa {
+        font-size: 28px;
+    }
+    nav .web-logo img {
+        height: auto;
+        width: 65%;
+    }
+}
+
+@media(max-width:480px) {
+    .banner {
+        height: 215px;
+    }
+    .contacts-link {
+        top: 75px;
+    }
+    nav span i.fa {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:450px) {
+    .banner-text h1 {
+        font-size: 22px;
+    }
+    .banner-text h3 {
+        font-size: 13px;
+    }
+    .banner-text {
+        left: 28%;
+        top: 70px;
+    }
+    nav .web-logo img {
+        width: 60%;
+    }
+}
+
+@media(max-width:430px) {
+    .banner-text {
+        left: 28%;
+        top: 60px;
+    }
+}
+
+@media(max-width:400px) {
+    .banner-text {
+        left: 28%;
+        top: 50px;
+    }
+}
+
+@media(max-width:380px) {
+    nav .web-logo img {
+        width: 50%;
+    }
+    .banner-text {
+        left: 26%;
+        top: 50px;
+    }
+}
+
+@media(max-width:360px) {
+    .contacts-link {
+        top: 80px;
+    }
+    .banner-text {
+        left: 15%;
+        top: 100px;
+    }
+    .banner-text h1 {
+        font-size: 24px;
+        text-shadow: 0 0 3px black;
+    }
+    .banner-text h3 {
+        text-shadow: 0 0 3px black;
+    }
+    nav span i.fa {
+        background: linear-gradient(45deg,orange,orange, yellow, coral);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .contacts-link a i {
+        text-shadow: 0 0 3px black;
+    }
+}
+@media(max-width:320px){
+    .banner-text h1 {
+        font-size: 20px;
+    }
+}
