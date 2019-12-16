@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner{
+    background: url('../images/banner.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+    box-shadow: 0 0 10px ;
+}
+.banner .svg-bg svg{
+    width: 100%;
+    height: 100%;
+}
+/******************** navbar *******************/
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgba(243, 125, 35, 0.829);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+nav .web-logo{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+
+  .sidenav a {
+    padding: 8px 8px 8px 185px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  nav span i.fa{
+      color: white;
+      position: absolute;
+      top:3%;
+      right:2%;
+      font-size: 40px;
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/************************** contacts-links*************************/
+
+.contacts-link{
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+.contacts-link a {
+    margin-top: 15px;
+    height: 40px;
+    width: 40px;
+}
+.contacts-link a i {
+    font-size: 30px;
+    color: white;
+    background: coral;
+    border-radius: 50%;
+    padding: 10px;
+    height: 5px;
+    width: 5px;
+    transition: .3s ease;
+    transform-style: preserve-3d;
+
+}
+
+.contacts-link a i:hover{
+    background: white;
+    height: 50px;
+    width: 50px;
+    color: black;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(124, 122, 122);
+    animation: tilt 1s ease;
+    cursor: none;
+}
+@keyframes tilt{
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+
+.banner-text{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.banner-text h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}
+.banner-text h3{
+    color: white;
+    font-size: 20px;
+}
