@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <style>
+    
+a:focus {
+  outline: none;
+}
+
+.portfolioFilter {
+  padding: 15px 0;
+}
+
+.portfolioFilter a {
+  margin-right: 6px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.portfolioFilter a.current {
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  color: #f9f9f9;
+}
+.portfolioContainer{
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+img {
+  margin: 20px;
+  max-width:100%;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+.overlay {
+    background: rgba(19, 19, 19, 0.246);
+    height: 244px;
+    width: 338px;
+    display: none;
+    margin-top: -261px;
+    margin-left: 19px;
+    position: relative;
+    transition: 1s ease;
+    
+}
+.over:hover .overlay {
+  display: block;
+
+}
+.overlay button {
+  transform: translate(200%,200%);
+  background: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.overlay button a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.over:hover img {
+  transition: .5s ease;
+  /* filter:blur(2px); */
+  transform: scale(1.02);
+  overflow: hidden;
+}
+/* h1{
+  background: linear-gradient(90deg,orange,white,orange);
+  font-size: 55px;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: orange;
+  -webkit-text-fill-color: transparent;
+} */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+          <div class="portfolioFilter clearfix">
+            <a href="#" data-filter="*" class="current">All</a>
+            <a href="#" data-filter=".webTemplates">Web Templates</a>
+            <a href="#" data-filter=".logos">Logos</a>
+          </div>
+            </div>
+            <div class="container">
+              <div class="portfolioContainer">
+      
+                <div class="webTemplates objects over"> 
+                  <img src="./images/web/kk.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://www.khaleejshipsmaintenance.com/" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="drawings places over">
+                  <img src="./images/web/e-learning.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="./images/kk.jpg" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="webTemplates food over">
+                  <img src="./images/web/malik.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="logos drawings over">
+                  <img src="./images/web/npi.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="webTemplates over">
+                  <img src="./images/web/rockd.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="ui over">
+                  <img src="./images/web/rtl.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="drawings over">
+                  <img src="./images/web/stl.jpg" alt="image">
+                </div>
+          
+                <div class="webTemplates over">
+                  <img src="./images/web/kk.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+          
+                <div class="drawings over">
+                  <img src="./images/web/kk.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="logos over">
+                  <img src="./images/web/kk.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="ui over">
+                  <img src="./images/web/kk.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="logos over">
+                  <img src="./images/web/kk.jpg" alt="image">
+                  <div class="overlay">
+                    <button>
+                      <a href="https://nedogroup.com.pk" target="_blank">Visit</a>
+                    </button>
+                  </div>
+                </div>
+                
+               
+              </div>
+            </div>
+        </div>
+      </div>
+
+     <div class="container text-center">
+        <ul class="pagination pagination-lg">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="./port2.html">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul> 
+     </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
+      <script>
+          $(document).ready(function(){
+            $(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
+          })
+      </script>
+</body>
+</html>
