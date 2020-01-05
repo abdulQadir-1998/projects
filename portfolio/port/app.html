@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            padding: 10px;
+        }
+    .container{
+        margin: auto;
+        height: 350px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:black;
+        
+    }
+    .one, .two, .three{
+        height: 300px;
+        width: 133px;
+        position: relative;
+        transition: .4s ease;
+        border-radius: 20px;
+    }
+    .one {
+        background: peachpuff;
+        left: 100px;
+        opacity: .5;
+    }
+    .two {
+        background: whitesmoke;
+        width: 175px;
+        z-index: 1;
+        box-shadow: 0 0 5px black;
+    }
+    .three {
+        background: coral;
+        right: 100px;
+        z-index: 0;
+        opacity: .5;
+    }
+
+    .container:hover .two{
+        height: 350px;
+        width: 200px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .container:hover .one{
+        transform: rotate(-10deg);
+        left: 15px;
+        opacity: 1;
+    }
+    .container:hover .three{
+        transform: rotate(10deg);
+        right: 15px;
+        opacity: 1;
+    }
+    </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="container">
+        <div class="one"><img src="./2.png" width="100%" height="auto"></div>
+        <div class="two"><img src="./1.png" width="100%" height="auto"></div>
+        <div class="three"><img src="./3.png" width="100%" height="auto"></div>
+    </div>
+
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+  </div>
+
+  <div class="parent">
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+  </div>
+
+  <div class="parent">
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+  </div>
+</body>
+</html>
